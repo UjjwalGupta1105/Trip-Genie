@@ -1,0 +1,919 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* Header */
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: rgb(245, 245, 245);
+  
+}
+.header-home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.header .first,.header-home .first{
+  display: flex;
+  width: 290px;
+}
+.header h2,.header-home h2{
+  font-size: 35px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  width: 80%;
+  margin-left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 102, 0);
+}
+img{
+  width: 90px;
+  height:70px;
+}
+
+.header .second,.header-home .second{
+  display: flex;
+  width: 140px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.header button,.header   a,.header-home button{
+  height: 50px;
+  border-radius: 12px;
+  padding: 5px;
+  font-size: 17.0px;
+  font-weight: 545;
+  text-align: center;
+  width: 98%;
+  outline: none;
+  background-color:  rgb(255, 102, 0);
+  /* border: 2.2px solid black; */
+  color: white;
+  transition: all 0.2s;
+}
+.second   a{
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+font-size: 17px;
+}
+.header button:hover,.header a:hover.header-home button:hover{
+  transform: scale(1.05);
+  background-color: 3px solid  rgb(255, 102, 0);
+  cursor: pointer;
+  /* box-shadow: 1.5px 1.5px 5px black,-1.5px -1.5px 5px black; */
+}
+
+
+/* Loading */
+.loading{
+  background-color: rgb(207, 207, 207);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.loading div{
+  width: 90px;
+  height: 80px;
+  border-bottom: 5px solid rgb(50, 50, 50);
+  border-radius: 50%;
+  animation: loader 800ms linear infinite;
+}
+@keyframes loader{
+  to{
+    transform: rotateZ(-300deg);
+  }
+}
+
+
+/* SpeedDial */
+
+.speedDial{
+  position: fixed;
+  right: 80px;
+  top: 20px;
+  height: 300px;
+}
+.speedDial button{
+  font-size: 0px;
+}
+.speedDial button {
+  /* height: 160px; */
+  width: 40px;
+  /* size: 2; */
+  padding: 27px;
+}
+
+/* HomePage */
+
+.HomePage{
+  background-image:  url("./assets/bg100.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+.HomePageContainer{
+  display: flex;
+  padding-top: 200px;
+  /* padding-bottom: 200px; */
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 250px;
+  height: 100vh;
+}
+.HomePage , .HomePage h2,.HomePage p,.HomePage h1{
+  text-align: center;
+  margin: auto;
+}
+.HomePage h2{
+  /* color: rgb(206, 83, 2); */
+  color: rgb(255, 102, 0);
+  font-size: 39px;
+  margin: 5px;
+  text-shadow: 1px 1px black;
+}
+.HomePage h1{
+  font-size: 30px;
+  margin: 25px;
+  text-shadow: 1px 1px white;
+}
+.HomePage p{
+  width: 70%;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-shadow: 1.5px 1.5px white;
+}
+.HomePage a{
+  width: 170px;
+  display: block;
+  margin: 10px auto;
+  /* height: 30px; */
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 12px;
+  /* background-color: rgb(224, 114, 40);
+   */
+   outline: none;
+   color: white;
+   background-color: rgb(255, 111, 0);
+   transition: all 0.35s;
+}
+.HomePage a:hover{
+  cursor: pointer;
+  /* background-color:  rgb(255, 112, 3); */
+  transform: scale(1.05);
+  /* color: rgb(237, 237, 237); */
+  /* box-shadow: 1.5px 1.5px 5px black,-1.5px -1.5px 5px black; */
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Create trip Page Styling */
+
+
+/* Budget Element */
+.BudgetElement{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+  border-radius: 10px;
+  height: 120px;
+  width: 240px;
+  margin: 10px 20px;
+  padding: 6px;
+  transition: all 0.3s;
+}
+.BudgetElement:hover{
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.BudgetElement h4{
+ font-weight: 650;
+ font-size: 19px;
+ margin: 5px;
+}
+.BudgetElement p{
+  font-weight: 400;
+  font-size: 16px;
+  color: grey;
+  margin: 5px 1px;
+ }
+
+ /* People Element */
+
+ .PeopleElement{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+  border-radius: 10px;
+  height: 120px;
+  width: 230px;
+  margin: 10px 20px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.PeopleElement:hover{
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.PeopleElement:cl{
+  transform: scale(1.04);
+  box-shadow:  1.5px 1.5px 5px black,-1.5px -1.5px 5px black;
+}
+.PeopleElement h4{
+ font-weight: 650;
+ font-size: 19px;
+ margin: 2px 0px;
+}
+.PeopleElement p{
+  font-weight: 400;
+  font-size: 16px;
+  color: grey;
+  margin: 5px 1px;
+ }
+
+/* CreateTrip Page */
+.CreateTripPage{
+  width: 94%;
+  display: block;
+  margin: auto;
+  margin-bottom: 180px;
+}
+.CreateTripPage .headings{
+  margin: 40px 20px;
+  margin-bottom: 25px;
+}
+
+.CreateTripPage .headings h2{
+  color: orange;
+  font-size: 33px;
+  font-weight: 650;
+  margin: 15px 1px;
+}
+.CreateTripPage .headings p{
+  font-size: 18px;
+  width: 50%;
+  margin: 10px 10px;
+}
+
+ .Inputs{
+  height:250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 20px;
+}
+.Inputs>div{
+  margin: 20px 10px;
+  margin-bottom: 10px;
+}
+.Inputs div h4{
+  font-size: 24px;
+  font-weight: 650;
+  margin-bottom: 15px;
+}
+.Inputs input,.PlaceInput{
+  font-size: 18.5px;
+  padding: 10px;
+  margin: 8px;
+  width: 300px;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.PlaceInput>div{
+  width: 500px;
+  color: qwhite;
+  background-color: aliceblue;
+  color: black;
+}
+.PlaceInput div{
+  cursor: pointer;
+  padding: 2.5px;
+  /* margin: 0px; */
+}
+
+.css-19bb58m{
+  padding: 30px 20px;
+}
+/* Budget Area */
+
+.BudgetArea,.PeopleArea{
+  width: 90%;
+  display: block;
+  margin:70px auto;
+}
+.BudgetArea h6,.PeopleArea h6{
+  font-size: 25px;
+  font-weight: 650;
+  margin-top: 20px;
+}
+.BudgetArea>p,.PeopleArea>p{
+  font-size: 16px;
+  margin: 10px;
+  color: rgb(159, 0, 0);
+}
+
+.BudgetElementSet{
+  margin: 36px 5px;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.PeopleElementSet{
+  margin: 36px 2px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.CreateTripPage button{
+  position: absolute;
+  right: 10px;
+  font-size: 23px;
+  font-weight: 600;
+  width: 190px;
+  height: 53px;
+  padding: 7px;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  border-radius: 7px;
+  transition: all 0.3s;
+  margin: 20px 10px;
+  margin-bottom: 50px;
+}
+.CreateTripPage button:hover{
+  /* box-shadow: 1.5px 1.5px 5px black,-1.5px -1.5px 5px black; */
+  transform: scale(1.02);
+  
+}
+.bgChange{
+  box-shadow: 1.5px 1.5px 5px black,-1.5px -1.5px 5px black;
+  transform: scale(1.02);
+  transform: translateY(-7px);
+}
+
+.css-1nmdiq5-menu{
+  background-color: aliceblue;
+}
+
+section{
+  position:absolute;
+  top:5px
+}
+
+/* Login Signup Page */
+
+.login-signup-page{
+  display: grid;
+  place-items: center;
+  height: 88vh;
+  width: 100vw;
+  background-color: rgb(197, 196, 196);
+}
+.login-signup-container{
+  background-color: white;
+  border-radius: 12px;
+  width: 350px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 18px;
+}
+.login-signup-box{
+  width: 100%;
+  margin-bottom: 41px;
+}
+.login-signup-switch{
+  display: flex;
+  height: 38px;
+  justify-content: space-around;
+}
+.login-signup-switch p{
+  font-size: 21px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-signup-box button{
+  width: 50%;
+  background-color: rgb(245 68 68);
+  transition: all 0.5s;
+}
+.loginForm,.signinForm{
+margin: 5px;
+padding: 10px;
+transition: all 0.5s;
+
+}
+.signinForm{
+  width: 95%;
+  transform: translateX(105%);
+  position: absolute;
+  top: 70px;
+}
+.login-Email,.login-Pass,.signup-email,.signup-pass,.signup-name,.update-name,.update-email,.oldpass,.newpass,.confirmnewpass,.forgot-password-email,.reset-password,.reset-confirm-password,.payments-divs{
+  position: relative;
+}
+.form-inputs{
+  width: 90%;
+  height: 50px;
+  padding: 5px;
+  margin: 15px;
+  padding-left: 55px;
+  font-size: 15px;
+  box-sizing: border-box;
+  border: 1.5px solid black;
+}
+.login-Email div,.login-Pass div,.signup-email div,.signup-pass div,.signup-name div,.update-name div,.update-email div,.oldpass div,.newpass div,.confirmnewpass div,.forgot-password-email div,.reset-password div,.reset-confirm-password div,.payment-divs-icon{
+  position: absolute;
+  height: 100px;
+  top: 25px;
+  left: 25px;
+}
+.Forgot-Pass{
+  margin: 20px;
+ display: flex;
+ justify-content: flex-end;
+}
+.Forgot-Pass a{
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+.login-Button,.signup-Button,.forgot-password-button,.reset-password-button,.shipping-button,.payment-button{
+  color: black;
+  margin: 20px auto;
+  margin-right: 7px;
+  margin-top: 18px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px;
+  background-color: rgb(227, 87, 87);
+  border-radius: 12px;
+}
+.login-Button:hover,.signup-Button:hover,.update-button:hover,.updatePassword-button:hover,.forgot-password-button:hover,.reset-password-button:hover,.shipping-button:hover,.paymennt-button:hover{
+  background-color: rgb(226, 64, 64);
+  transform: scale(1.04);
+}
+.shiftToLeft{
+  transform: translateX(-130%);
+}
+.shiftToRight{
+  transform: translateX(+100%);
+}
+.shiftToNeutral{
+  transform: translateX(1.5%);
+}
+.signup-image{
+  margin: 10px;
+  display: flex;
+}
+.signup-image img{
+  border-radius: 100%;
+  height: 30px;
+}
+.signup-image input::-webkit-file-upload-button{
+  width: 200px;
+  height: 30px;
+}
+
+/* Update Profile */
+.update-user-container h2,.updatePassword-user-page h2,.forgot-password-page h2,.reset-password-page h2{
+  font-size: 25px;
+  font-weight: 550px;
+  text-align: center;
+  border-bottom: 2px solid grey;
+  width: 230px;
+  margin: 30px auto;
+}
+
+.update-user-page,.updatePassword-user-page{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(197, 196, 196);
+}
+.update-user-container{
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  width: 350px;
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+}
+.updatePassword-user-container{
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  width: 350px;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+}
+
+.update-button,.updatePassword-button,.forgot-password-button,.reset-password-button,.payment-button{
+  display: block;
+  margin: 20px auto;
+  margin-top: 35px;
+  width: 90%;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px;
+  background-color: rgb(227, 87, 87);
+  border-radius: 12px;
+}
+.forgot-password-page{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(197, 196, 196);
+}
+.forgot-password-container{
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.reset-password-page{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(197, 196, 196);
+}
+.reset-password-container{
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* My Profile */
+
+.myprofile-container{
+  height: 100Vh;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  
+}
+.myprofile-left{
+  width: 50%;
+}
+.myprofile-left h2{
+  font-size: 40px;
+  font-weight: 550;
+  margin: 20px;
+  margin-left: 47px;
+
+}
+.myprofile-left img{
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 200px;
+}
+.myprofile-left a{
+
+  font-size: 30px;
+  font-weight: 550;
+  border: 2px solid black;
+ background-color: rgb(227, 87, 87);
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto;
+  width: 380px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding-top: 10px;
+}
+.myprofile-right{
+  width: 50%;
+  padding: 10px;
+  padding-top:85px;
+}
+.myprofile-right h4{
+  font-size: 28px;
+  margin: 2px;
+}
+.myprofile-container a:hover{
+  background-color: rgb(226, 64, 64);
+  transform: scale(1.04);
+}
+.myprofile-right p{
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.myprofile-right a{
+  font-size: 25px;
+  font-weight: 550;
+  border: 2px solid black;
+  background-color: rgb(227, 87, 87);
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto;
+  width: 350px;
+  height: 47px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding-top: 5px;
+}
+
+
+/* InfoSection */
+
+.InfoSection{
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.InfoSection div{
+  width: 90%;
+  /* display: block; */
+  margin: auto;
+}
+
+.InfoSection img{
+  width:100%;
+  border-radius: 14px;
+  height: 300px;
+  margin-top: 30px;
+}
+.InfoSection h4{
+  font-size: 29px;
+  font-weight: 650;
+  margin: 20px;
+}
+.boxes-section{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.boxes-section p{
+  border: 2px solid rgb(215, 215, 215);
+  font-size: 19px;
+  padding: 7px;
+  margin: 15px;
+  font-weight: 500;
+  margin-top: 0px;
+  border-radius: 20px;
+  background-color: rgb(221, 221, 221);
+}
+
+.hotelSection{
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.hotelSection h4{
+  font-size: 26px;
+  font-weight: 650;
+  margin: 7px;
+  margin-top: 70px;
+}
+.hotelsSet{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.hotelCont{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  border-radius: 12px;
+  transition: all 0.5s;
+  width: 340px;
+  border:1px solid grey;
+  border-radius: 12px;
+  padding-bottom: 10px;
+}
+.hotelCont img{
+  width: 94%;
+  display: block;
+  border-radius: 12px;
+  height: 230px;
+  margin: 10px auto;
+  margin-bottom: 0px;
+}
+.hotelCont:hover{
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 10px black,-1px -1px 5px black;
+}
+.hotelCont>div{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
+
+.hotelCont>div h6{
+  color: rgb(185, 185, 185);
+  font-size: 16px;
+}
+
+
+/* Places Section */
+.placesSection{
+  width: 97vw;
+  margin: auto;
+  color: black;
+}
+.placesSection>h4{
+  font-size: 26px;
+  font-weight: 650p;
+  margin: 30px;
+  /* margin-left: 100px; */
+  font-weight: 650;
+  width: 80%;
+}
+.placesSet{
+  display: flex;
+  flex-direction: column;
+}
+.placesSet h2{
+  font-size: 25px;
+  margin: 20px;
+  margin-left: 30px;
+}
+.placeCont{
+  color: black;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+.placeCont>div{
+  margin: 30px;
+}
+.placeCont a{
+  color: black;
+}
+.placesSet h3{
+color: rgb(209, 136, 0);
+margin: 19px;
+}
+.placeCard{
+  border:2px solid grey;
+  border-radius: 12px;
+  margin: 5px 70px;
+  margin-left: 0px;
+  display: flex;
+width: 560px;
+height: 230px;
+transition: all 0.5s;
+}
+.placeCard:hover{
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 10px black,-1px -1px 5px black;
+}
+.placeCard img{
+  width: 190px;
+  height: 180px;
+  border-radius: 12px;
+  /* display: block;
+  margin: auto; */
+  margin: 0px 8px;
+}
+.imgName{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.placeDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
+}
+.placeDetails h2{
+  font-size: 22px;
+  font-weight: 650;
+  margin: 8px 7px;
+  /* margin-top: 17px; */
+}
+.placeDetails h6{
+  font-size: 15px;
+  font-weight: 500;
+  margin: 8px 5px;
+}
+.placeDetails p{
+  color: rgb(103, 103, 103);
+  margin: 5px;
+  font-size: 13.5px;
+}
+.placeDetails h5{
+  /* color: rgb(103, 103, 103); */
+  margin: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.placeDetails h5>span{
+  /* color: rgb(103, 103, 103); */
+  font-weight: 650;
+}
+
+/* MyTrips Page */
+
+.myTrips{
+  display: flex;
+  flex-wrap: wrap;
+  width: 91%;
+  margin: auto;
+}
+.myTripsPage h1{
+  font-size: 35px;
+  margin: 32px;
+  font-weight: 650;
+  color: rgb(251, 185, 64);
+}
+.myTripCard{
+  color: black;
+  border:2px solid grey;
+  border-radius: 12px;
+  margin: 35px 70px;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+width: 334px;
+height: 465px;
+transition: all 0.5s;
+}
+.myTripCard:hover{
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 10px black,-1px -1px 5px black;
+}
+.myTripCard img{
+  display: block;
+  width: 93%;
+  margin: 5px auto;
+  height: 290px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.myTripCard>div>h2{
+  margin: 12px 9px;
+  font-weight: 650;
+}
+
+.myTripdetails p{
+  font-size: 21px;
+  font-weight: 650;
+  margin: 5px;
+}
+.myTripdetails span{
+  font-size: 21px;
+  font-weight: 500;
+  margin: 5px;
+}
+.myTripdetails .budget>span{
+  color: green;
+  font-weight: 650;
+}
